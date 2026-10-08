@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #d68989;
+    color: #880505;
+}
+
+/*Simple grid layout for thhe Page*/
+.page-container {
+    display: grid;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+header, nav, main, aside, footer {
+    background-color: #f3d5d5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(102, 2, 2, 0.08);
+text-align: center; 
+}
+
+header {
+    background-color: #754242;
+    color: #ff2626;
+}
+
+nav {
+    background-color: #754242;
+    color: #ff2626;
+}
+
+aside {
+    background-color: #ff2323;
+    
+}
+
+footer {
+    background-color: #754242;
+    color: #ff2626;
+}
+
+/* Setup layout columns for larger screens */
+@media (min-width: 768px) {
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+
+
+}
+
+/* - - - Responsive CSS - - - */
+/* Mobile first - base styles (0-767px) */
+.element {
+   font-size: 14px;
+   padding: 10px;
+   background-color: #431f6f;
+border-radius: 6px;
+color: #720588;
+}
+
+/* Tablet and above (768px) */
+    @media (min-width: 768px) {
+
+.element {
+        
+    
+    font-size: 16px;
+    padding: 12px;
+    background-color: #431f6f;
+}
+}
+
+/* Desktop (1024px) */
+    @media (min-width: 1024px) {
+.element {
+        font-size: 18px;
+        padding: 14px;
+        background-color: #e54fba;
+    }
+
+}
